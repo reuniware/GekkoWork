@@ -32,7 +32,7 @@ strat.check = function(candle) {
       direction: 'long', // or short
       trigger: { // ignored when direction is not "long"
         type: 'trailingStop',
-        trailPercentage: 5
+        trailPercentage: 10 // if 5 here then 43%
         // or:
         // trailValue: 100
       }
