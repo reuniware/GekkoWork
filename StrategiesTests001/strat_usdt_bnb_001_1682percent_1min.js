@@ -1,4 +1,4 @@
-// binance	USDT	BNB	2020-06-21 12:19	2021-08-27 12:18	1 year, 2 months, 5 days, 20 hours
+// binance	USDT	ADA	2020-06-01 12:57	2021-08-27 20:57	1 year, 2 months, 3 weeks, 5 days, 5 hours
 
 // Let's create our own strategy
 var strat = {};
@@ -28,7 +28,7 @@ let div = 0.0;
 strat.check = function(candle) {
 
   div = candle.high/candle.low;
-  console.log(div);
+  //console.log(div);
   if (div > highest) highest = div;
 
   if (done === false && (div > 1.003)) {
@@ -37,7 +37,7 @@ strat.check = function(candle) {
       direction: 'long', // or short
       trigger: { // ignored when direction is not "long"
         type: 'trailingStop',
-        trailPercentage: 10
+        trailPercentage: 11
         // or:
         // trailValue: 100
       }
