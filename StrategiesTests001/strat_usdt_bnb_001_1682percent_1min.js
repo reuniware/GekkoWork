@@ -1,4 +1,4 @@
-// binance	USDT	ADA	2020-06-01 12:57	2021-08-27 20:57	1 year, 2 months, 3 weeks, 5 days, 5 hours
+// binance	USDT	BNB	2020-06-21 12:19	2021-08-27 12:18	1 year, 2 months, 5 days, 20 hours
 
 // Let's create our own strategy
 var strat = {};
