@@ -4,6 +4,7 @@ var strat = {};
 // Prepare everything our strat needs
 strat.init = function() {
   // your code!
+  this.requiredHistory = 5; // require 5 candles before giving advice ; after that function check is called
 }
 
 // What happens on every new candle?
