@@ -26,13 +26,13 @@ let done = false;
 strat.check = function(candle) {
 
   //console.log(candle.high/candle.low);
-  if (done === false && (candle.high/candle.low > 1.05)) {
+  if (done === false && (candle.high/candle.low > 1.045)) {
     // your code!
     this.advice({
       direction: 'long', // or short
       trigger: { // ignored when direction is not "long"
         type: 'trailingStop',
-        trailPercentage: 10 // if 5 here then 43%
+        trailPercentage: 10
         // or:
         // trailValue: 100
       }
