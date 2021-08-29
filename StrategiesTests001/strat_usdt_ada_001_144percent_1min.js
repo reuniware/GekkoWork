@@ -26,7 +26,7 @@ let done = false;
 strat.check = function(candle) {
 
   //console.log(candle.high/candle.low);
-  if (done === false && (candle.high/candle.low > 1.047)) {
+  if (done === false && (candle.high/candle.low > 1.048)) {
     // your code!
     this.advice({
       direction: 'long', // or short
