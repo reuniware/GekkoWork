@@ -1,3 +1,5 @@
+// binance	USDT	ADA	2020-06-01 12:57	2021-08-27 20:57	1 year, 2 months, 3 weeks, 5 days, 5 hours
+
 // Let's create our own strategy
 var strat = {};
 
@@ -22,11 +24,6 @@ strat.log = function() {
 // update or not.
 let done = false;
 strat.check = function(candle) {
-
-  //console.log(candle.high);
-  if (candle.high/candle.low > 1.05) {
-    console.log(">1.05");
-  }
 
   //console.log(candle.high/candle.low);
   if (done === false && (candle.high/candle.low > 1.05)) {
